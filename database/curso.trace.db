@@ -1,0 +1,9 @@
+2018-01-17 20:53:17 jdbc[12]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO CLIENTE (ID, NOME, EMAIL) VALUE[*] (1, 'Isaias', 'hoje@email.com') "; expected "DIRECT, SORTED, DEFAULT, VALUES, SET, (, WITH, SELECT, FROM"; SQL statement:
+INSERT INTO cliente (id, nome, email) VALUE (1, 'Isaias', 'hoje@email.com') [42001-196]
+2018-01-17 21:41:39 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT COUNT * FROM CLIENTE [*]"; expected "., (, USE, AS, RIGHT, LEFT, FULL, INNER, JOIN, CROSS, NATURAL, ,, SELECT"; SQL statement:
+select count * from cliente [42001-196]
+2018-01-17 21:47:43 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT (*[*]) FROM CLIENTE "; expected "), NOT, EXISTS, INTERSECTS, SELECT, FROM, WITH"; SQL statement:
+select (*) from cliente [42001-196]
