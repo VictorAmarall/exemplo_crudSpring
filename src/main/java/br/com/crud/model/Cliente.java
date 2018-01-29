@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+
 
 
 @AllArgsConstructor
@@ -15,12 +15,13 @@ import lombok.Data;
 public class Cliente {
 
 	@Id
-	@GeneratedValue (strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
 	private String nome;
 	private String email;
-	public Long getId() {
+	
+	public long getId() {
 		return id;
 	}
 	public void setId(Long id) {
@@ -38,6 +39,8 @@ public class Cliente {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	
 	
 	
 }
